@@ -1,0 +1,81 @@
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+:root {
+  /* Game colors */
+  --color-primary: #ff00a6;
+  --color-secondary: #00ffe7;
+  --color-win: #00ff85;
+  --color-lose: #ff0059;
+  --color-tie: #00ffe7;
+  --color-bg-dark: #181825;
+  --color-bg-panel: rgba(35, 35, 71, 0.9);
+  --color-text-light: #ffffff;
+  --color-text-dark: #000000;
+  --color-accent: #00ccff;
+  --color-error: #dc2626;
+  --color-success: #4caf50;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 2.5rem;
+
+  /* Border radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.25rem;
+
+  /* Border width */
+  --border-thin: 2px;
+  --border-thick: 3px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.2s ease;
+  --transition-slow: 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  background: #000;
+  background-size: 224px;
+}
+
+body {
+  font-family: 'Public Pixel', monospace, system-ui;
+  background: #181825;
+  color: #f8fafc;
+  letter-spacing: 1px;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: repeating-linear-gradient(135deg, #232347 0 40px, #181825 40px 80px);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.pixel-border {
+  box-shadow:
+    0 0 0 2px #232347,
+    0 0 0 4px #00ffe7,
+    0 0 16px #00ffe7;
+}

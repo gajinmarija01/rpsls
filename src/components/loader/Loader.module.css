@@ -1,0 +1,49 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.loader {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-sm);
+    font-weight: bold;
+    font-size: 1rem;
+    background: #3a3a5a;
+    color: var(--color-secondary);
+    border: var(--border-thin) solid var(--color-secondary);
+}
+
+.spinner {
+    width: 3rem;
+    height: 3rem;
+    border: var(--border-thin) solid var(--color-secondary);
+    border-top: var(--border-thin) solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.text {
+    color: var(--color-secondary);
+    font-size: 1.25rem;
+}
