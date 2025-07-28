@@ -5,6 +5,7 @@ A Rock, Paper, Scissors, Lizard, Spock game built with React and TypeScript. Has
 ## Game BE Service
 
 This project includes a Node.js backend service that implements the RPSLS game logic and provides a RESTful API.
+In case the projects BE server isn't run - the app fallbacks to the provided external API.
 
 ### Backend API Endpoints
 
